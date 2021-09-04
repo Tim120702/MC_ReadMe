@@ -39,8 +39,7 @@
 		function loadPage(ButtID){
 			console.log(ButtID);
 			$("#page").load(ButtID+".html");
-			adjustWidth();
-			setTimeout("adjustWidth()",50);
+			setTimeout("adjustWidth()",100);
 		}
 		function loadPagetest(){
 			$("#page").load("https://blog.csdn.net/qq_25479327/article/details/80292738");
@@ -93,7 +92,7 @@
 			<input type="button" class="menuBut" value="" id="p8" onClick="loadPagetest()">
 			<br>
 		</div>
-		<div id="content" style="height:100%;min-height: 500px； background:transparent;float:left;border: solid;">
+		<div id="content" style="height:100%;min-height: 500px； background:transparent;float:left;border: solid;width:0px">
 			<div id="page" style="max-width: 900px;"></div>
 		</div>
 	</div>
