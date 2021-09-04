@@ -38,7 +38,7 @@
 	<script>
 		function loadPage(ButtID){
 			console.log(ButtID);
-			//$("#page").load(ButtID+".html");
+			$("#page").load(ButtID+".html");
 			adjustWidth();
 		}
 		function loadPagetest(){
@@ -79,7 +79,7 @@
 			<br>
 			<input type="button" class="menuBut" value="工具包" id="p7" onClick="loadPage(this.id)">
 			<br>
-			<input type="button" class="menuBut" value="" id="p8" onClick="loadPage(this.id)">
+			<input type="button" class="menuBut" value="" id="p8" onClick="loadPagetest()">
 			<br>
 		</div>
 		<div id="content" style="height:100%;background:transparent;float:left;">
